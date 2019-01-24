@@ -2465,3 +2465,59 @@ class MyriadcoinTestnet(Myriadcoin):
     WIF_BYTE = bytes.fromhex("ef")
     GENESIS_HASH = ('0000017ce2a79c8bddafbbe47c004aa9'
                     '2b20678c354b34085f62b762084b9788')
+
+
+class Abelian(Coin):
+    NAME = "Abelian"
+    SHORTNAME = "ABE"
+    NET = "mainnet"
+    XPUB_VERBYTES = bytes.fromhex("0488b21e")
+    XPRV_VERBYTES = bytes.fromhex("0488ade4")
+    P2PKH_VERBYTE = bytes.fromhex("53")
+    P2SH_VERBYTES = [bytes.fromhex("17")]
+    WIF_BYTE = bytes.fromhex("b7")
+    #TODO
+    #GENESIS_HASH =
+    #TX_COUNT =
+    #TX_COUNT_HEIGHT =
+    #TX_PER_BLOCK =
+    #PEERS =
+    RPC_PORT = 8932
+    PEER_DEFAULT_PORTS = {'t': '50001', 's': '50002'}
+
+
+class AbelianTestnet(Abelian):
+    SHORTNAME = "tABE"
+    NET = "testnet"
+    XPUB_VERBYTES = bytes.fromhex("043587cf")
+    XPRV_VERBYTES = bytes.fromhex("04358394")
+
+    P2PKH_VERBYTE = bytes.fromhex("7f")
+    P2SH_VERBYTES = [bytes.fromhex("41")]
+    WIF_BYTE = bytes.fromhex("9e")
+    #TODO
+    #GENESIS_HASH =
+    #TX_COUNT =
+    #TX_COUNT_HEIGHT =
+    #TX_PER_BLOCK =
+    #PEERS =
+    RPC_PORT = 18932
+
+class AbelianRegtest(AbelianTestnet):
+    SHORTNAME = "rABE"
+    NET = "regtest"
+    P2PKH_VERBYTE = bytes.fromhex("7a")
+    P2SH_VERBYTES = [bytes.fromhex("3c")]
+    WIF_BYTE = bytes.fromhex("cc")
+    #TODO
+    #GENESIS_HASH =
+    #TX_COUNT =
+    #TX_COUNT_HEIGHT =
+    #TX_PER_BLOCK =
+    #PEERS =
+    RPC_PORT = 18943
+
+
+
+
+

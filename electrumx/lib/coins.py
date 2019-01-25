@@ -2517,8 +2517,9 @@ class AbelianRegtest(AbelianTestnet):
     TX_PER_BLOCK = 21
     #PEERS =
     RPC_PORT = 18943
-
-
+    # TODO : This might change on protocol changes. Update if required.
+    GENESIS_HASH = ('0f9188f13cb7b2c71f2a335e3a4fc328'
+                    'bf5beb436012afca590b1a11466e2206')
 
 
 

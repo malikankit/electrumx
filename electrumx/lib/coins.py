@@ -2511,9 +2511,10 @@ class AbelianRegtest(AbelianTestnet):
     WIF_BYTE = bytes.fromhex("cc")
     #TODO
     #GENESIS_HASH =
-    #TX_COUNT =
-    #TX_COUNT_HEIGHT =
-    #TX_PER_BLOCK =
+    # TODO : These are temporary numbers. Update if required.
+    TX_COUNT = 1
+    TX_COUNT_HEIGHT = 1
+    TX_PER_BLOCK = 21
     #PEERS =
     RPC_PORT = 18943
 
